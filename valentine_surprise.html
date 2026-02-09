@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Surprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="https://cdn.pixabay.com/audio/2022/02/23/audio_4b0f6d7a4f.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <!-- Step 1: Name Input -->
+  <section id="step1" class="step">
+    <h1>Hello! What's your name?</h1>
+    <input type="text" id="nameInput" placeholder="Type your name here">
+    <button id="nameSubmit">Submit</button>
+  </section>
+
+  <!-- Step 2: Greeting + Click to reveal -->
+  <section id="step2" class="step hidden">
+    <h1 id="greeting"></h1>
+    <p id="message">I made this just for you.<br>Click repeatedly for more messages!</p>
+    <button id="messageBtn">Next</button>
+  </section>
+
+  <!-- Step 3: Heart Tap Game -->
+  <section id="step3" class="step hidden">
+    <h1>Catch the hearts 💖</h1>
+    <p>Tap 5 hearts to continue</p>
+    <div id="heartsContainer"></div>
+    <p id="heartCounter">0 / 5</p>
+  </section>
+
+  <!-- Step 4: Yes/No Finale -->
+  <section id="step4" class="step hidden">
+    <h1>Will you be my Valentine? 💌</h1>
+    <div class="buttons">
+      <button id="yesBtn">Yes 💘</button>
+      <button id="noBtn">No 💔</button>
+    </div>
+  </section>
+
+  <!-- Step 5: Final Message -->
+  <section id="finalStep" class="step hidden">
+    <h1>YAYY! 💕</h1>
+    <p>Thank you so much for saying yes, My Luv! &lt;3</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
